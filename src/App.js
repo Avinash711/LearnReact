@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Notifications } from './component/Basics/Notifications';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>
+      <div>
+        <MyNewComponent />
+      </div>
+      <div>
+      Welcome to My First React App
+      </div>
+      <p>React is really awesome!!</p>
+      <h1>{5+5}</h1>
+      <div>
+        <Notifications />
+      </div>
+      </div>
+  )
 }
 
-export default App;
+const MyNewComponent = () => {
+  return <h1>Avinash Kumar Gaurav </h1>;
+
+};
+
+export default App
